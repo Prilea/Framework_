@@ -36,7 +36,7 @@ public class ReportIssuesTests extends BaseTest {
         mantisSite.getViewIssuesPage().deleteIssue();
         Thread.sleep(3000);
 
-        mantisSite.getViewIssuesPage().searchFieldType();
+        mantisSite.getViewIssuesPage().searchFieldType(currentId);
         softAssert.assertThat(mantisSite.getMainPage().errorNumber()).isEqualTo("APPLICATION ERROR #1100");
         softAssert.assertThat(mantisSite.getMainPage().errorText()).isEqualTo("Issue " + currentId + " not found.");
 

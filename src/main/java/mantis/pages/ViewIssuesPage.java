@@ -69,8 +69,8 @@ public class ViewIssuesPage {
     }
     @FindBy (css = "input[name=\"bug_id\"]")
     private WebElement search;
-    public void searchFieldType() {
-        search.sendKeys(idValueText());
+    public void searchFieldType(String currentId) {
+        search.sendKeys(currentId);
         search.sendKeys(Keys.ENTER);
     }
 

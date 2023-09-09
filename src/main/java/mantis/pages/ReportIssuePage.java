@@ -27,8 +27,8 @@ public class ReportIssuePage {
 
 
     public void createIssue (String summaryString, String descriptionString) {
-       summary.sendKeys(summaryString);
-       description.sendKeys(descriptionString);
+        summary.sendKeys(summaryString);
+        description.sendKeys(descriptionString);
     }
 
     public void createIssueButton() {
